@@ -87,6 +87,7 @@ li {
   width: 500px;
   margin: 0 auto;
 }
+
 .chat-room-user:after {
   content: "";
   clear: both;
