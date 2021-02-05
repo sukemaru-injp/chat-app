@@ -16,41 +16,7 @@
 
 <%# チャット画面 %>
 <div class="chat-main">
-  <div class="text-box">
-    <div class="name-box">
-      <div class="friend-name">
-        <p>たかし</p>
-      </div>
-      <div class="chat-time">
-        <p>2021/02/04(Thu) 12:40:40</p>
-      </div>
-    </div>
-
-    <div class="lower-message">
-      <div class="text-content">
-        <p>おはよう</p>
-      </div>
-    </div>
-  </div>
-
-
-    <div class="text-box">
-    <div class="name-box">
-      <div class="friend-name">
-        <p>ゆめ</p>
-      </div>
-      <div class="chat-time">
-        <p>2021/02/04(Thu) 12:50:00</p>
-      </div>
-    </div>
-
-    <div class="lower-message">
-      <div class="text-content">
-        <p>こんばんは</p>
-      </div>
-    </div>
-  </div>
-
+  <%= render partial: 'message', collection: @messages %>
 </div>
 
 
