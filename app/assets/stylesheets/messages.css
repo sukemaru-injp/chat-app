@@ -22,7 +22,7 @@
   background-color: #253141;
 }
 
-.user-name a{
+.user-name {
   color: #fafafa;
   font-size: 16px;
   text-decoration: none;
@@ -35,6 +35,12 @@
   padding: 14px;
   font-size: 10px;
 }
+
+.user-nav {
+  display: flex;
+}
+
+
 
 /* サイド下 */
 
