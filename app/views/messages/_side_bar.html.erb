@@ -12,21 +12,17 @@
   </div>
 
   <div class="room-create">
-    <a href="/">create</a>
+    <%= link_to "チャットルーム作成", new_room_path %>
   </div>
 </div>
 
 
 <div class="side-main">
-  <div class="room">
-    <div class="room-name">
-      <a href="/">chatroom1</a>
+  <% current_user.rooms.each do |room| %>
+    <div class="room">
+      <div class="room-name">
+          <a href="/"><%= room.name %></a>
+      </div>
     </div>
-  </div>
-
-  <div class="room">
-    <div class="room-name">
-      <a href="/">chatroom2</a>
-    </div>
-  </div>
+  <% end %>
 </div>
