@@ -1,7 +1,14 @@
 
 <div class="side-top">
   <div class="user-name">
-    <a href="/">tech</a>
+    <%= current_user.name %>
+    <ul class=user-nav>
+      <li class="user-link">
+        <%= link_to "編集", edit_user_path(current_user) %>
+      </li>
+      <li>
+      </li>
+    </ul>
   </div>
 
   <div class="room-create">
